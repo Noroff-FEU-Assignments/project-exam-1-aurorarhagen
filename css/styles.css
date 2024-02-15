@@ -1,7 +1,54 @@
 /**********************
-    GLOBAL STYLES
+      GLOBAL STYLES
 ***********************/
 
-h2, h3, h4 {
+h2, h3, h4, p, .legendtxt {
     font-family: 'K2D', sans-serif;
 }
+
+.navtxt, h1 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/**********************
+        HOMEPAGE
+***********************/
+
+
+
+
+/**********************
+      LIST OF POSTS
+***********************/
+
+
+
+
+
+
+/**********************
+        ABOUT
+***********************/
+
+
+
+
+
+
+/**********************
+        CONTACT
+***********************/
+
+
+
+
+
+/**********************
+       BLOG POST
+***********************/
+
+

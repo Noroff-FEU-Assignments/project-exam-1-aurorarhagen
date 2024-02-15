@@ -14,6 +14,37 @@
         </style>
 </head>
 <body>
-    
+    <header>
+        <input type="checkbox" id="nav-box">
+        <label for="nav-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOUlEQVR4nO3VsQkAMAwDQe0/VrzQb5BMkMLgkOYPVBsEwomkaUAB+3Hq1+E13ph05ZykMfidJKXnAFL2T3AnCaPBAAAAAElFTkSuQmCC" class="hamburger-nav" alt="Hamburger menu"></label>
+        <nav>
+            <ul class="menu">
+                <li><a href=index.html><img src="images/the-fashion-post-logo.jpg" alt="The Fashion Post logo" class="logo"></a></li>
+                <li><a class="navtxt" href="index.html">Home</a></li>
+                <li><a class="navtxt" href="listblogs.html">Posts</a></li>
+                <li><a class="navtxt" href="about.html">About</a></li>
+                <li><a class="navtxt" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <h1>CONTACT US</h1>
+        <p>Got any questions? Use the form below to get in tough with us. We will answer you in 2-3 business days.</p>
+        <div class="contactform">
+            <form action="contact.html" method="GET">
+            <fieldset>
+                <legend class="legendtxt">Fill in all fields to submit your message</legend>
+                <p><label for="name">Name:</label></p>
+                <input type="text" name="name" id="name" class="contactform" required>
+                <p><label for="email">Email adress:</label></p>
+                <input type="email" name="email" id="email" class="contactform" required>
+                <p><label for="message">Subject:</label></p>
+                <textarea id="message" name="subject" class="txtmessage" required></textarea>
+                <p><label for="message">Message:</label></p>
+                <textarea id="message" name="message" class="txtmessage" required></textarea>
+                <input class="send" type="submit" value="Send message">
+            </fieldset>
+     </form>
+    </main>
 </body>
 </html>
