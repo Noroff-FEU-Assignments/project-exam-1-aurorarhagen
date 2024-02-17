@@ -24,6 +24,14 @@ h1 {
 }
 body {
     background-color: #F3F3F3;
+    margin: 0px;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 /**********************
@@ -51,23 +59,27 @@ body {
     background-color: #D4D4D4;
     align-content: center;
     border: black;
-    border-style: inset;
+    padding: 7px;
+    border: 3px;
+    border-color: black;
 }
 
-
+.about-name {
+    text-align: justify;
+}
 
 /**********************
         ABOUT
 ***********************/
 .about-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
 
 .about-content img {
-    max-width: 100%;
+    max-width: 400px;
     max-height: 100%;
+    padding-top: 10px;
 }
 
 
@@ -75,6 +87,9 @@ body {
     text-align: center;
 }
 
+#about-txt {
+    padding-top: 100px;
+}
 
 
 /**********************
