@@ -52,20 +52,34 @@ nav, #nav-box {
     display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     nav {
-        display: inline;
+        display: inline
     }
     .hamburger-nav{
         display: none;
     }
+    li {
+        display: inline;
+        margin-left: auto;
+        text-align: center;
+    }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     
     .hnavtxt{
         display: block;
+        font-size: 25px;
+        padding: 15px;
+    }
+    nav {
+        display: none;
+        text-align: center;
+    }
+
+    header {
+        min-height: 50px;
     }
 
 }
@@ -76,16 +90,33 @@ nav, #nav-box {
     height: 100%;
 }
 
-.menu li {
-    display: block;
+.menu li 
+
+footer {
+    margin-top: 50px;
+    outline: black;
 }
 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 150px;
+}
 /**********************
         HOMEPAGE
 ***********************/
 
+.popular-post {
+    margin-top: 15px;
+}
 
 
+.popular-post img {
+    max-height: 100%;
+    max-width: 100%;
+}
 
 /**********************
       LIST OF POSTS
