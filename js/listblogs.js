@@ -37,6 +37,7 @@ function createCard(element) {
     const h2Element = document.createElement('h2');
     const btnElement = document.createElement('button');
     const imageElement = document.createElement('img');
+    imageElement.src = element._links;
     divElement.classList.add('card');
     btnElement.classList.add('read-now-btn');
     h2Element.classList.add('card-title');

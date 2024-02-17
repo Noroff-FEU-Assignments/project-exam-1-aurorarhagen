@@ -43,15 +43,37 @@ body {
     gap: 25px;
 }
 
+.card {
+    background-color: #E4E4E4;
+}
+
+.read-now-btn {
+    background-color: #D4D4D4;
+    align-content: center;
+    border: black;
+    border-style: inset;
+}
 
 
 
 /**********************
         ABOUT
 ***********************/
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+}
+
+.about-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
-
+.mission-txt {
+    text-align: center;
+}
 
 
 
