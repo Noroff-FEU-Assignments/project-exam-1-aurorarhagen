@@ -2,8 +2,10 @@
       GLOBAL STYLES
 ***********************/
 
-h2, h3, h4, p, .legendtxt, .read-now-btn, li {
+h2, h3, h4, p, .legendtxt, .read-now-btn, li, a {
     font-family: 'K2D', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 .navtxt, h1 {
