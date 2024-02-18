@@ -161,7 +161,7 @@ button:hover {
 
 .card {
     background-color: #E4E4E4;
-    max-width: 450px;
+    max-width: 400px;
     text-align: center;
     filter: drop-shadow(3px 3px 3px #303030);  
 }
@@ -185,7 +185,7 @@ button:hover {
 }
 
 .card img {
-    max-width: 450px;
+    max-width: 400px;
     max-height: 100%;
 }
 /**********************
