@@ -3,13 +3,13 @@
 ***********************/
 
 h2, h3, h4, p, .legendtxt, .read-now-btn, li, a {
-    font-family: 'K2D', sans-serif;
+    font-family: 'K2D', sans-serif, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     color: black;
 }
 
 .navtxt, h1 {
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     text-decoration: none;
     color: black;
