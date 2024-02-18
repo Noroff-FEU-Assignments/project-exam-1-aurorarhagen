@@ -31,7 +31,6 @@ async function renderBlogPost() {
                                     <h1>${blogData.title.rendered}</h1>
                                     <h4>Published: ${blogData.date}</h4>
                                     <p>${blogData.content.rendered}</p> 
-    
                                 `
 }
 

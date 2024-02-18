@@ -52,49 +52,18 @@ nav, #nav-box {
     display: block;
 }
 
-@media (min-width: 800px) {
-    nav {
-        display: inline
-    }
-    .hamburger-nav{
-        display: none;
-    }
-    li {
-        display: inline;
-        margin-left: auto;
-        text-align: center;
-    }
-}
-@media (max-width: 800px) {
 
-    
-    .hnavtxt{
-        display: block;
-        font-size: 25px;
-        padding: 15px;
-    }
-    nav {
-        display: none;
-        text-align: center;
-    }
-
-    header {
-        min-height: 50px;
-    }
-
-}
-
-.menu{
+.menu {
     margin: 0;
     padding: 8px;
     height: 100%;
 }
 
-.menu li 
 
 footer {
-    margin-top: 50px;
-    outline: black;
+    padding-top: 50px;
+    margin: auto;
+    max-width: 1400px;
 }
 
 .logo {
@@ -104,6 +73,47 @@ footer {
     width: 50%;
     max-height: 150px;
 }
+
+/**********************
+    MEDIA QUERIES
+***********************/
+
+@media (min-width: 800px) {
+    nav {
+        display: inline
+    }
+    .hamburger-nav{
+        display: none;
+    }
+    li {
+        display: inline;
+        padding-left: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+        text-align: center;
+    }
+
+    header {
+        min-height: 50px;
+    }
+
+    #blog-content figure {
+        max-width: 400px;
+        max-height: 100%;
+        display: block;
+    }
+
+    #blog-content p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
 /**********************
         HOMEPAGE
 ***********************/
@@ -182,3 +192,7 @@ footer {
 /**********************
        BLOG POST
 ***********************/
+#blog-content figure {
+    display: flex;
+    justify-content: center;
+}
