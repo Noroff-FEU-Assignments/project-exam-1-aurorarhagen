@@ -222,7 +222,7 @@ button:hover {
 }
 
 
-.input-field.error {
+.input-field .error {
     border-color: red;
 }
 

@@ -26,9 +26,9 @@ const isRequired = value => value === '' ? false : true;
 
 const isLengthBetween = (length, min, max) => length < min || length > max ? false : true;
 
-const emailValidity = (email) => {
+const mailValidity = (mail) => {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+    return re.test(mail);
 };
 
 const showError = (input, message) => {
@@ -58,7 +58,7 @@ const checkName = () => {
     const nameInput = name.value.trim();
 
     if (!isRequired(nameInput)) {
-        showError(name, 'Name cannot be blank.');
+        showError(name, 'Please enter your name');
     } else if (!isBetween(nameInput.length, min, max)) {
         showError(name, `Name must be between ${min} and ${max} characters.`)
     } else {
@@ -73,7 +73,7 @@ const checkEmail = () => {
     let valid = false;
     const emailInput = mail.value.trim();
     if (!isRequired(emailInput)) {
-        showError(mail, 'Email cannot be blank.');
+        showError(mail, 'Please enter your email.');
     } else if (!isEmailValid(mail)) {
         showError(mail, 'Email is not valid.')
     } else {
@@ -91,7 +91,7 @@ const checkSubject = () => {
     const subjectInput = subject.value.trim();
 
     if (!isRequired(subjectInput)) {
-        showError(subject, 'Subject cannot be blank.');
+        showError(subject, 'Please enter a subject.');
     } else if (!isBetween(subjectInput.length, min, max)) {
         showError(subject, `Subject must be between ${min} and ${max} characters.`)
     } else {
@@ -109,7 +109,7 @@ const checkMessage = () => {
     const messageInput = message.value.trim();
 
     if (!isRequired(messageInput)) {
-        showError(message, 'Message cannot be blank.');
+        showError(message, 'Please enter a message.');
     } else if (!isBetween(messageInput.length, min, max)) {
         showError(message, `Message must be between ${min} and ${max} characters.`)
     } else {
