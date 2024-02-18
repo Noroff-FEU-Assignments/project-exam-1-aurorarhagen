@@ -119,9 +119,10 @@ footer {
         min-height: 50px;
     }
 
-    #blog-content figure {
-        max-width: 400px;
-        max-height: 100%;
+    #blog-content figure img {
+        max-width: 350px;
+        max-height: 450px;
+
         display: block;
     }
 
@@ -147,6 +148,7 @@ footer {
 
 button:hover {
     border:#D4D4D4;
+    cursor: pointer;
 }
 /**********************
       LIST OF POSTS
@@ -218,6 +220,10 @@ button:hover {
     background-color: #D9D9D9;
 }
 
+
+.input-field.error {
+    border-color: red;
+}
 
 
 /**********************

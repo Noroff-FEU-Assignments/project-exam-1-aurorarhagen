@@ -6,6 +6,7 @@
     <title>Contact | The Fashion Post</title>
     <meta name="description" content="Contact The Fashion Post for any inquieries">
     <link href="css/styles.css" rel="stylesheet">
+    <script type="defer" src="js/form.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
       </style>
@@ -45,15 +46,29 @@
             <form action="contact.html" method="GET">
             <fieldset>
                 <legend class="legendtxt">Fill in all fields to submit your message</legend>
+            <div class="input-field">
                 <p><label for="name">Name:</label></p>
                 <input type="text" name="name" id="name" class="contactform" required>
+                <small></small>
+            </div>
+            <div class="input-field">
                 <p><label for="email">Email adress:</label></p>
                 <input type="email" name="email" id="email" class="contactform" required>
-                <p><label for="message">Subject:</label></p>
-                <textarea id="message" name="subject" class="txtmessage" required></textarea>
+                <small></small>
+            </div>
+            <div class="input-field">
+                <p><label for="subject">Subject:</label></p>
+                <textarea id="subject" name="subject" class="txtmessage" required></textarea>
+                <small></small>
+            </div>
+            <div class="input-field">
                 <p><label for="message">Message:</label></p>
                 <textarea id="message" name="message" class="txtmessage" required></textarea>
+                <small></small>
+            </div>
+            <div class="input-field">
                 <input class="send" type="submit" value="Send message">
+            </div>
             </fieldset>
      </form>
      </div>
