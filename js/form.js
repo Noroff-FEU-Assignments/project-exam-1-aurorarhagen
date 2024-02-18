@@ -17,11 +17,6 @@ const message = document.querySelector('#message');
 
 const form = document.querySelector('.send')
 
-form.addEventListener('submit', function (e){
-    e.preventDefault();
-})
-
-
 const isRequired = value => value === '' ? false : true;
 
 const isLengthBetween = (length, min, max) => length < min || length > max ? false : true;
@@ -44,7 +39,7 @@ const showSuccess = (input) => {
     const inputField = input.parentElement;
 
     inputField.classList.remove('error');
-    inputFieldclassList.add('success');
+    inputField.classList.add('success');
 
     const error = inputField.querySelector('small');
     error.textContent = '';
@@ -60,7 +55,7 @@ const checkName = () => {
     if (!isRequired(nameInput)) {
         showError(name, 'Please enter your name');
     } else if (!isBetween(nameInput.length, min, max)) {
-        showError(name, `Name must be between ${min} and ${max} characters.`)
+        showError(name, `Your name must be between ${min} and ${max} characters.`)
     } else {
         showSuccess(nameInput);
         valid = true;
@@ -75,7 +70,7 @@ const checkEmail = () => {
     if (!isRequired(emailInput)) {
         showError(mail, 'Please enter your email.');
     } else if (!isEmailValid(mail)) {
-        showError(mail, 'Email is not valid.')
+        showError(mail, 'Your Email is not valid.')
     } else {
         showSuccess(mail);
         valid = true;
@@ -93,7 +88,7 @@ const checkSubject = () => {
     if (!isRequired(subjectInput)) {
         showError(subject, 'Please enter a subject.');
     } else if (!isBetween(subjectInput.length, min, max)) {
-        showError(subject, `Subject must be between ${min} and ${max} characters.`)
+        showError(subject, `The subject must be between ${min} and ${max} characters.`)
     } else {
         showSuccess(subject);
         valid = true;
@@ -111,7 +106,7 @@ const checkMessage = () => {
     if (!isRequired(messageInput)) {
         showError(message, 'Please enter a message.');
     } else if (!isBetween(messageInput.length, min, max)) {
-        showError(message, `Message must be between ${min} and ${max} characters.`)
+        showError(message, `Your message must be between ${min} and ${max} characters.`)
     } else {
         showSuccess(message);
         valid = true;
