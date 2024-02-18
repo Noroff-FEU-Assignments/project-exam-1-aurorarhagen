@@ -5,7 +5,7 @@ const search = url.search;
 
 const parameter = new URLSearchParams(search); 
 
-const URL ='https://www.project-exam-1-aurorarhagen.com/wp-json/wp/v2/posts';
+const URL ='https://www.project-exam-1-aurorarhagen.com/wp-json/wp/v2/posts?_embed';
 
 const testing_function = async(url) => {
     try {
@@ -37,7 +37,7 @@ function createCard(element) {
     const h2Element = document.createElement('h2');
     const btnElement = document.createElement('button');
     const imageElement = document.createElement('img');
-    imageElement.src = element._links;
+    imageElement.src = element._embedded['wp:featuredmedia']['0'].source_url
     divElement.classList.add('card');
     btnElement.classList.add('read-now-btn');
     h2Element.classList.add('card-title');

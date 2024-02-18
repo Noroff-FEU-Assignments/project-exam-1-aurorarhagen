@@ -32,7 +32,13 @@ async function renderBlogPost() {
                                     <h4>Published: ${blogData.date}</h4>
                                     <p>${blogData.content.rendered}</p> 
                                 `
+    document.title= blogData.title.rendered;
+    let metaData =document.getElementsByTagName("meta");
+    metaData.description.content = `${blogData.excerpt.rendered}`;
+    console.log (document.metaData)
 }
 
 
+
 renderBlogPost();
+

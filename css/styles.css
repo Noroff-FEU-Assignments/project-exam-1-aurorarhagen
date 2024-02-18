@@ -15,6 +15,9 @@ h2, h3, h4, p, .legendtxt, .read-now-btn, li, a {
     color: black;
     
 }
+.navtxt {
+    text-transform: uppercase;
+}
 
 h1 {
     text-align: center;
@@ -41,6 +44,7 @@ main {
     margin: auto;
     padding-bottom: 40px;
     padding-top: 40px;
+    border-bottom: 2px solid black;
 }
 
 
@@ -54,7 +58,7 @@ nav, #nav-box {
 
 
 .menu {
-    margin: 0;
+    margin: 5px;
     padding: 8px;
     height: 100%;
 }
@@ -85,12 +89,22 @@ footer {
     .hamburger-nav{
         display: none;
     }
-    li {
-        display: inline;
-        padding-left: auto;
-        text-align: center;
+    .menu {
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none
     }
+    
+    .popular-post {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    }
+    
 }
+
 @media (max-width: 800px) {
 
     nav {
@@ -118,33 +132,31 @@ footer {
         HOMEPAGE
 ***********************/
 
-.popular-post {
-    margin-top: 15px;
-}
 
-
-.popular-post img {
+.home-img {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 400px;
 }
 
+.popular-post h2, p, a {
+    padding-left: 5px;
+}
 /**********************
       LIST OF POSTS
 ***********************/
-
 #all-posts {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
-    gap: 25px;
+    grid-gap: 15px;
 }
 
 .card {
     background-color: #E4E4E4;
+    max-width: 450px;
 }
 
 .read-now-btn {
     background-color: #D4D4D4;
-    align-content: center;
     border: black;
     padding: 7px;
     border: 3px;
@@ -155,6 +167,10 @@ footer {
     text-align: justify;
 }
 
+.card img {
+    max-width: 450px;
+    max-height: 100%;
+}
 /**********************
         ABOUT
 ***********************/
