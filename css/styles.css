@@ -164,7 +164,7 @@ button:hover {
     filter: drop-shadow(3px 3px 3px #303030);  
 }
 
-.read-now-btn, button {
+.read-now-btn, button, .send {
     background-color: #D4D4D4;
     border: black;
     padding: 7px;
@@ -173,6 +173,8 @@ button:hover {
     border-color: rgb(61, 61, 61);
     border-style: groove;
     filter: drop-shadow(2px 2px 2px #303030);
+    color: black;
+    text-decoration: none;
       
 }
 
