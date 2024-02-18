@@ -163,7 +163,8 @@ button:hover {
     background-color: #E4E4E4;
     max-width: 370px;
     text-align: center;
-    filter: drop-shadow(3px 3px 3px #303030);  
+    filter: drop-shadow(3px 3px 3px #303030);
+    padding-left: 3px;  
 }
 
 .read-now-btn, button, .send {
