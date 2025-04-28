@@ -3,7 +3,7 @@
 ![image](/images/screenshot-homepage-pe1.jpg)
 
 This is the first project exam at Noroff where I would use the skills I had learnt during my first year to build a blog of my own choosing. I created a blog called The Fashion Post, geared towards young women interested in fashion and lifestyle content.  
-[Link to the deplyed site on Netlify (blog posts currently unavailable)](https://project-exam-1-aurorarhagen.netlify.app/)  
+[Link to the deployed site on Netlify (blog posts currently unavailable)](https://project-exam-1-aurorarhagen.netlify.app/)  
 
 
 ## Description
