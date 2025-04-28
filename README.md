@@ -1,4 +1,4 @@
-# The Fashio Post - Project Exam 1 
+# The Fashion Post - Project Exam 1 
 
 ![image](/images/screenshot-homepage-pe1.jpg)
 
